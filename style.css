@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom,#68EACC 0%, #497BEB 100%);
+}
+.wraper{
+margin: 120px auto;
+max-width: 400px;
+width: 100%;
+background-color: #ffffff;
+border-radius: 5px;
+padding: 25px;
+}
+.wraper header{
+    font-size: 30px;
+    font-weight: 600;
+}
+.wraper .inputfiled{
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+    
+}
+.inputfiled input{
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    font-size: 17px;
+    border-radius: 3px;
+    padding-left: 15px;
+}
+.inputfiled button{
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8E49EB;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-align: center;
+}
+.wraper .todolist{
+    max-height: 250px;
+    overflow-y: auto;
+}
+.todolist li{
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: #f2f2f2;
+    border-radius: 3px;
+    margin-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todolist li:hover span button{
+    right: 0px;
+}
+.todolist li span button{
+    background-color: #e74c3c; 
+    border: none;
+    outline: none;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-align: center;
+    width: 60px;
+    height: 5vh;
+    position: absolute;
+    right: -60px;
+    transition: all 0.3s ease;
+}
+.wraper .footer{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer button{
+    border: none;
+    outline: none;
+    background: #8E49EB;
+    color: #ffffff;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    text-align: center;
+    width: 100%;
+    height: 5vh;
+    padding: 6px 10px;
+}
+.editBtn{
+    background-color: #e74c3c; 
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    height: 5vh;
+}
+.delBtn{
+    background-color: #e74c3c; 
+    cursor: pointer;
+    color: white;
+    width: 60px;
+    height: 5vh;
+}
+.firstTd{
+    width: 50%;
+    text-align: justify;
+}
+.secondTd{
+    width: 20%;
+    right: 0px;
+}
+.thirdTd{
+    width: 20%;
+    right: 0px;
+}
+#content{
+    width: 310px;
+    height: 250px;
+    /* border: black 1px solid; */
+    padding: 0px 0px;
+    margin: 10px 17px;
+    overflow: auto;
+}

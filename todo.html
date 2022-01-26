@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo app</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+</head>
+<body>
+    <div class="wraper">
+        <header>ToDo App</header>
+        <div class="inputfiled">
+            <input type="text" id="item"  placeholder="Add Your NEw TODO">
+            <button onclick="addItem()">ADD Task</button>
+        </div>
+        <div id="content">
+            <table id="table" cellpadding="3px">
+                
+            </table>
+        </div>
+       
+        <div class="footer">
+            <!-- <span>You have 4 Pending Task</span> -->
+            <button onclick="clearall()">Clear All</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
